@@ -1,8 +1,4 @@
 #!/bin/bash
-
-INPUT= $1
-DELIM= $2
-OUTPUT=$3
-
-tail -n +2 $INPUT | cut -d $DELIM -f 2-6| tr $DELIM " "| sort -r -n -k 6 >>$OUTPUT
+pwd
+tail -n +2 $1 | cut -d $2 -f 2-6| tr $3 " "| sort -r -n -k 6 >>$2
 
